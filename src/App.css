@@ -1,0 +1,56 @@
+body {
+  color: #CFC0BD;
+  background-color: #7F9183;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+
+.puppyInfo {
+  color: #CFC0BD;
+  background-color: #586F6B;
+  font-size: smaller;
+  margin: 10px;
+  max-width: 200px;
+  border-radius: 10%;
+  border-style: double;
+}
+
+.formStyling {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: small;
+  color: #CFC0BD;
+  background-color: #586F6B;
+  margin: 15px;
+  padding: 15px;
+  border-style: double;
+}
+
+.pupSection {
+  margin: 35px;
+  justify-content: center;
+  text-align: center;
+}
+
+.puppyImg {
+  max-width: 100px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #7F9183;
+  border: #7F9183;
+  border-style: double;
+}
+
+h2 {
+  color: #586F6B;
+  font-weight: 300;
+  text-decoration: underline;
+  text-shadow: #CFC0BD;
+  text-decoration-color: #CFC0BD;
+  text-decoration-thickness: 2px;
+}
