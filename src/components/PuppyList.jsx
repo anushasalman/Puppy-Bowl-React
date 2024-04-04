@@ -1,5 +1,6 @@
-import PuppyInfo from "./PuppyInfo";
+import PuppyInfo from "./PuppyInfo.jsx";
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
 const COHORT_NAME = `2402-FTB-ET-WEB-FT`;
 const BASE_API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/${COHORT_NAME}`;
@@ -35,11 +36,7 @@ const PuppyList = ({ baseUrl, updatePage, setUpdatePage }) => {
             return <PuppyInfo key=
             {`player_${player.id}`} player={player} baseUrl={baseUrl} setUpdatePage={setUpdatePage} 
             />;
-            <>
-            <Routes>
-              <Route path='/puppy/:id' element={<SelectedPup />} />
-            </Routes>
-            </>
+            
           })
         ) : (
           <p>go look for some pups!</p>

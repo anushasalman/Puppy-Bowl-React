@@ -9,8 +9,14 @@ const AddPuppy = ({ baseUrl, setUpdatePage }) => {
     try {
       const response = await fetch(`${baseUrl}/players`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, breed, imageUrl })
+        headers: { 
+          "Content-Type": "application/json" 
+        },
+        body: JSON.stringify({ 
+          name, 
+          breed, 
+          imageUrl 
+        })
       });
       const result = await response.json();
       console.log(result);

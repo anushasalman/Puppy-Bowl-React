@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
+const COHORT_NAME = `2402-FTB-ET-WEB-FT`;
+const BASE_API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/${COHORT_NAME}`;
+
 const SelectedPup = ({baseUrl}) => {
-  const [pupper, setPupper] = useState({});
+  const [pupper, setPupper] = useState();
   const navigate = useNavigate();
 
 const { playerId } = useParams();
@@ -25,10 +28,10 @@ useEffect(() => {
   return (
     <>
       <h1>Selected puppy deets here</h1>
-      {/*<h3>{player.name}</h3>
-      <p>{player.breed}</p>*/}
+      {/* <h3>{player.name}
+      <p>{player.breed}</p> */}
       <button onClick={() => {
-        navigate("/players");
+        navigate("/");
       }}>Go back</button>
     </>
   )

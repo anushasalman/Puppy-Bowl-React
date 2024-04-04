@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const PuppyInfo = ({ baseUrl, player, setUpdatePage }) => {
 
   const handleClick = async () => {
@@ -21,7 +23,7 @@ const PuppyInfo = ({ baseUrl, player, setUpdatePage }) => {
     <>
       <div className="puppyInfo">
         <img className="puppyImg" src={player.imageUrl} />
-        <h4>{player.name}</h4>
+        <Link to={`/puppy/${player.id}`}><h4>{player.name}</h4></Link>
         <button onClick={handleClick}>Adopt a pup to make life better</button>
       </div>
     </>
