@@ -18,14 +18,9 @@ function App() {
       <NavBar />
       <h2>Puppy Bowl React</h2>
       <Routes>
-        <Route path='/' element={<Home baseUrl={BASE_API_URL} setUpdatePage={setUpdatePage} updatePage={updatePage}/>} />
-        {/*<Route path='/players' element={<PuppyList />} />*/}
+        <Route path='/' element={<Home baseUrl={BASE_API_URL} setUpdatePage={setUpdatePage} updatePage={updatePage} />} />
         <Route path='/puppy/:id' element={<SelectedPup />} />
-        
       </Routes>
-
-      {/* <AddPuppy baseUrl={BASE_API_URL} setUpdatePage={setUpdatePage} />
-      <PuppyList baseUrl={BASE_API_URL} setUpdatePage={setUpdatePage} updatePage={updatePage} /> */}
     </>
   )
 }
